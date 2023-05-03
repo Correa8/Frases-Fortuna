@@ -2,7 +2,7 @@ import React from 'react'
 
 const Loader = () => {
   return (
-    <div><img src="/naruto.gif"loading='lazy' /></div>
+    <div><img src="/Zorro.gif"loading='lazy' /></div>
   )
 }
 
