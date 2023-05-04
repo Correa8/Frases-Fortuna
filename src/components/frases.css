@@ -45,6 +45,7 @@ body {
   .user-card {
     width: 290px;
     height: 300px;
+    
   }
   .frase {
     font-size: 1.5rem;
@@ -61,7 +62,6 @@ body {
   }
   .frase {
     font-size: 1rem;
-  
   }
   .autor {
     font-size: 0.8rem;
