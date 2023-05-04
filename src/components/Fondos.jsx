@@ -37,7 +37,7 @@ const Fondo = ({ base, phrase, setGif, setLoad }) => {
       setImg(newIndex);
     }, 2700);
   };
-  document.body.style = `background: url("./back/${imagesFond[img]}");
+  document.body.style = `background: url("./back/${imagesFond[img]} className="fondo" ");
          background-size:cover;
          background-repeat:no-repeat`;
 
