@@ -1,6 +1,10 @@
 .btn {
-    background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(80,252,70,1) 100%); /* color de fondo */
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(80, 252, 70, 1) 100%
+  ); /* color de fondo */
   color: #0c0c0e; /* color de fuente */
   border: 2px solid aquamarine; /* tamaño y color de borde */
   padding: 16px 20px;
@@ -11,7 +15,8 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(80,252,70,1) 100%
   display: inline-block;
   font-size: 20px;
 }
-.btn::before, .btn::after {
+.btn::before,
+.btn::after {
   content: "";
   z-index: -1;
   position: absolute;
@@ -19,8 +24,13 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(80,252,70,1) 100%
   height: 100%;
   top: 0;
   left: -100%;
-  background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); /* color de fondo hover */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  ); /* color de fondo hover */
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -32,24 +42,33 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
   color: #df0a0a;
 }
 .btn:hover:before {
-    left: 0px;
+  left: 0px;
 }
-.btn::hover:after {
-    left: 50%;
+.btn:hover:after {
+  left: 50%;
+}
+@media (max-width: 990px) {
+  .btn {
+    font-size: 1.2rem;
   }
-  @media (max-width: 990px) {
-    .btn  {
-      font-size: 1.2rem;
-    }
+}
+@media (max-width: 576px) {
+  .btn {
+    font-size: 1rem;
   }
-  @media (max-width: 576px) {
-    .btn  {
-      font-size: 1rem;
-    }
+}
+@media (max-width: 576px) {
+  .btn {
+   
+    font-size: 0.9rem;
   }
-  @media (max-width: 320px) {
-    .btn  {
-      font-size: 0.6rem;
-    }
+}
+
+@media (max-width: 320px) {
+  .btn {
+    
+    width: 140px;
+    height: 42px;
+    font-size: 11px;
   }
-  
+}
